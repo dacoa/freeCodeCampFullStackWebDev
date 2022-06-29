@@ -1,0 +1,46 @@
+<!--<!DOCTYPE html>-->
+<html>
+  <head>
+    <title>Improve Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="content"> 
+
+      <form id="survey-form">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <fieldset>
+          <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name..." required /></label>
+          <label id="email-label">Email: <input type="email" name="email" id="email" placeholder="Enter your email..." required />
+          <label id="number-label">Age: <input type="number" id="number" min="10" max="100" placeholder="Age.." /> </label>
+        </fieldset>
+
+        <fieldset> 
+          Which option:
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          </fieldset>
+          <fieldset> Select another option:
+            <label> <input type="radio" name="rbtn" value="rbtn1" class="inline"/>Option 1</label>
+            <label> <input type="radio" name="rbtn" value="rbtn2" class="inline"/>Option 2</label>
+            <label> <input type="radio" name="rbtn" value="rbtn3" class="inline"/>Option 3</label>
+          </fieldset>
+          <fieldset> Select anything...
+            <label><input name="chbox" type="checkbox" value="cb1" class="inline"/> Checkbox1</label>
+            <label><input name="chbox" type="checkbox" value="cb2" class="inline" /> Checkbox2</label>
+            <label><input name="chbox" type="checkbox" value="cb3" class="inline" /> Checkbox3</label>
+          </fieldset>
+          <fieldset>
+              <label>Additional Comments<textarea type="textarea" ></textarea>
+              </label>
+          </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
